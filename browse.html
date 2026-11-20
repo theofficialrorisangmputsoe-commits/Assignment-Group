@@ -1,0 +1,400 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Group E - Browse</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+
+            <a class="navbar-brand" href="index.html">
+                Ralepoma<span>moviebox</span>
+            </a>
+
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse" data-bs-target="#menu">
+
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="browse.html">Browse</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="mylist.html">My List</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="account.html">Sign In</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Browse heading -->
+    <section class="container mt-5">
+
+        <h1>Explore Movies</h1>
+
+        <p>Discover movies from different categories.</p>
+
+        <!-- Search box -->
+        <div class="row mt-4">
+
+            <div class="col-md-6 mb-3">
+
+                <input type="text" id="searchInput"
+                    class="form-control"
+                    placeholder="Search for a movie...">
+
+            </div>
+
+            <div class="col-md-4 mb-3">
+
+                <select id="genreFilter" class="form-select">
+
+                    <option value="all">All Genres</option>
+                    <option value="Action">Action</option>
+                    <option value="Drama">Drama</option>
+                    <option value="Documentaries">Documentaries</option>
+                    <option value="Romances">Romance</option>
+                    <option value="Comedy">Comedy</option>
+                    <option value="Crime">Crime</option>
+                    <option value="Horror">Horror</option>
+
+                </select>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Movie collection -->
+    <section class="container mt-5">
+
+        <h2 class="text-center">Enjoy the movies</h2>
+
+        <!-- ALL MOVIES MUST BE INSIDE THIS ROW -->
+        <div class="row mt-4" id="movieContainer">
+
+
+            <!-- MOVIE 1 -->
+            <div class="col-md-3 mb-4">
+
+                <div class="movie-card" data-genre="Crime">
+
+                    <div class="video-container">
+                        <video src="iNumber_Number_-_G8(720p).mp4" controls></video>
+                    </div>
+
+                    <h5>Inumber Number</h5>
+                    <p>Crime | 2013</p>
+
+                    <button class="btn btn-danger add-btn"
+                        data-title="Inumber Number">
+                        Add to My List
+                    </button>
+
+                </div>
+            </div>
+
+
+            <!-- MOVIE 2 -->
+            <div class="col-md-3 mb-4">
+
+                <div class="movie-card" data-genre="Action">
+
+                    <div class="video-container">
+                        <video src="‘Five_Fingers_for_Marseilles’_Official_Trailer_HD(1080p).mp4" controls></video>
+                    </div>
+
+                    <h5>Five fingers for marseilles</h5>
+                    <p>Action | 2017</p>
+
+                    <button class="btn btn-danger add-btn"
+                        data-title="Five fingers for marseilles">
+                        Add to My List
+                    </button>
+
+                </div>
+            </div>
+
+
+            <!-- MOVIE 3 -->
+            <div class="col-md-3 mb-4">
+
+                <div class="movie-card" data-genre="Action">
+
+                    <div class="video-container">
+                        <video src="Mortal_Kombat_II___Official_Trailer_II(480p).mp4" controls></video>
+                    </div>
+
+                    <h5>Mortal combat</h5>
+                    <p>Action | 2026</p>
+
+                    <button class="btn btn-danger add-btn"
+                        data-title="Mortal combat">
+                        Add to My List
+                    </button>
+
+                </div>
+            </div>
+
+
+            <!-- MOVIE 4 -->
+            <div class="col-md-3 mb-4">
+
+                <div class="movie-card" data-genre="Action">
+
+                    <div class="video-container">
+                        <video src="The_Beekeeper_2___Official_Teaser_Trailer(1080p).mp4" controls></video>
+                    </div>
+
+                    <h5>Beekeper 2</h5>
+                    <p>Action | 2026</p>
+
+                    <button class="btn btn-danger add-btn"
+                        data-title="Beekeper 2">
+                        Add to My List
+                    </button>
+
+                </div>
+            </div>
+
+
+            <!-- MOVIE 5 -->
+            <div class="col-md-3 mb-4">
+
+                <div class="movie-card" data-genre="Drama">
+
+                    <div class="video-container">
+                        <video src="Bel-Air___Official_Trailer(480p).mp4" controls></video>
+                    </div>
+
+                    <h5>Bel-Air</h5>
+                    <p>Drama | 2022-2025</p>
+
+                    <button class="btn btn-danger add-btn"
+                        data-title="Bel-Air">
+                        Add to My List
+                    </button>
+
+                </div>
+            </div>
+
+
+            <!-- MOVIE 6 -->
+            <div class="col-md-3 mb-4">
+
+                <div class="movie-card" data-genre="Action">
+
+                    <div class="video-container">
+                        <video src="Fast_X__Part_2__2026__-_Vin_Diesel,_Dwayne_Johnson,_Jason_Statham___Concept_Trailer(360p).mp4" controls></video>
+                    </div>
+
+                    <h5>Fast x</h5>
+                    <p>Action | 2023</p>
+
+                    <button class="btn btn-danger add-btn"
+                        data-title="Fast x">
+                        Add to My List
+                    </button>
+
+                </div>
+            </div>
+
+
+            <!-- MOVIE 7 -->
+            <div class="col-md-3 mb-4">
+
+                <div class="movie-card" data-genre="Horror">
+
+                    <div class="video-container">
+                        <video src="Drag_Me_To_Hell__2009__-_Official_Trailer__HD_(480p).mp4" controls></video>
+                    </div>
+
+                    <h5>Drag me to hell</h5>
+                    <p>Horror | 2009</p>
+
+                    <button class="btn btn-danger add-btn"
+                        data-title="Drag me to hell">
+                        Add to My List
+                    </button>
+
+                </div>
+            </div>
+
+
+            <!-- MOVIE 8 -->
+            <div class="col-md-3 mb-4">
+
+                <div class="movie-card" data-genre="Comedy">
+
+                    <div class="video-container">
+                        <video src="Man_Vs_Bee___Official_Trailer___Netflix(720p).mp4" controls></video>
+                    </div>
+
+                    <h5>Bee vs Human</h5>
+                    <p>Comedy | 2020</p>
+
+                    <button class="btn btn-danger add-btn"
+                        data-title="Bee vs Human">
+                        Add to My List
+                    </button>
+
+                </div>
+            </div>
+
+
+            <!-- MOVIE 9 -->
+            <div class="col-md-3 mb-4">
+
+                <div class="movie-card" data-genre="Action">
+
+                    <div class="video-container">
+                        <video src="John_Wick__Chapter_4.mp4" controls></video>
+                    </div>
+
+                    <h5>John-Wick</h5>
+                    <p>Action | 2022-2025</p>
+
+                    <button class="btn btn-danger add-btn"
+                        data-title="John-Wick">
+                        Add to My List
+                    </button>
+
+                </div>
+            </div>
+
+
+            <!-- MOVIE 10 -->
+            <div class="col-md-3 mb-4">
+
+                <div class="movie-card" data-genre="Action">
+
+                    <div class="video-container">
+                        <video src="SPIDER-MAN.mp4" controls></video>
+                    </div>
+
+                    <h5>Spider Man</h5>
+                    <p>Action | 2026</p>
+
+                    <button class="btn btn-danger add-btn"
+                        data-title="Spider Man">
+                        Add to My List
+                    </button>
+
+                </div>
+            </div>
+
+
+            <!-- MOVIE 11 -->
+            <div class="col-md-3 mb-4">
+
+                <div class="movie-card" data-genre="Documentaries">
+
+                    <div class="video-container">
+                        <video src="Hacker__Trust_No_One__2021__[Trailer](360p).mp4" controls></video>
+                    </div>
+
+                    <h5>Hackers</h5>
+                    <p>Documentaries | 2021</p>
+
+                    <button class="btn btn-danger add-btn"
+                        data-title="Hackers">
+                        Add to My List
+                    </button>
+
+                </div>
+            </div>
+
+
+            <!-- MOVIE 12 -->
+            <div class="col-md-3 mb-4">
+
+                <div class="movie-card" data-genre="Action">
+
+                    <div class="video-container">
+                        <video src="From_the_World_of_John_Wick__Ballerina__2025__Official_Trailer_-_Ana_de_Armas(480p).mp4" controls></video>
+                    </div>
+
+                    <h5>Ballerina</h5>
+                    <p>Action | 2025</p>
+
+                    <button class="btn btn-danger add-btn"
+                        data-title="Ballerina">
+                        Add to My List
+                    </button>
+
+                </div>
+            </div>
+            
+
+
+        </div>
+
+
+        <!-- PAGINATION BUTTONS -->
+        <div class="pagination-container text-center mt-4 mb-5">
+
+            <button class="page-btn active" data-page="1">1</button>
+
+            <button class="page-btn" data-page="2">2</button>
+
+            <button class="page-btn" data-page="3">3</button>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer mt-5">
+
+        <p>© 2026 Ralepoma moviebox. All Rights Reserved.</p>
+
+    </footer>
+
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- My JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>

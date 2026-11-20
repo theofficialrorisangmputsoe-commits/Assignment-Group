@@ -1,0 +1,401 @@
+
+/* GENERAL STYLING */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    min-height: 100%;
+}
+
+body {
+    background-color: #0b1320;
+    color: white;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* NAVIGATION BAR */
+
+.navbar {
+    background-color: #101c2e;
+    padding: 18px 0;
+    flex-shrink: 0;
+}
+
+.navbar-brand {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+}
+
+.navbar-brand span {
+    color: #e50914;
+}
+
+.nav-link {
+    color: white !important;
+    margin-left: 15px;
+    transition: 0.3s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #e50914 !important;
+}
+
+
+/* MAIN CONTENT */
+
+main {
+    flex: 1 0 auto;
+    width: 100%;
+}
+
+
+/* HERO SECTION */
+
+.hero {
+    background: linear-gradient(
+        rgba(11, 19, 32, 0.6),
+        rgba(11, 19, 32, 0.9)
+    ),
+    url("banner.jpg");
+
+    background-size: cover;
+    background-position: center;
+    padding: 130px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 45px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+
+/* HEADINGS */
+
+h1, h2, h3, h4, h5 {
+    font-weight: bold;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+
+/* VIDEO CONTAINERS */
+
+.video-container {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    padding: 10px;
+    background-color: black;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.video-container video,
+.video-container iframe {
+    width: 100%;
+    max-width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+}
+
+
+/* LARGE CONTAINER */
+
+.large-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 30px auto;
+    background-color: #162337;
+    border-radius: 12px;
+    padding: 20px;
+    color: white;
+}
+
+
+/* MOVIE CARDS */
+
+.movie-card {
+    background-color: #162337;
+    padding: 15px;
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    min-width: 0;
+    overflow: hidden;
+    transition: 0.3s;
+
+    /* ALIGN CARD CONTENT */
+    display: flex;
+    flex-direction: column;
+}
+
+.movie-card:hover {
+    transform: translateY(-5px);
+}
+
+.movie-card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.movie-card h5 {
+    margin-top: 10px;
+    min-height: 48px;
+}
+
+.movie-card p {
+    color: #b8c2d1;
+    margin-bottom: 12px;
+}
+
+.movie-card video {
+    width: 100%;
+    max-width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+
+
+/* ADD TO MY LIST BUTTONS */
+
+.movie-card .add-btn {
+    width: 100%;
+    margin-top: auto;
+    align-self: stretch;
+}
+
+
+/* BUTTONS */
+
+.btn-danger {
+    background-color: #e50914;
+    border: none;
+}
+
+.btn-danger:hover {
+    background-color: #b20710;
+}
+
+
+/* SEARCH AND FILTER */
+
+.form-control,
+.form-select {
+    background-color: #162337;
+    color: white;
+    border: 1px solid #34445c;
+    padding: 12px;
+}
+
+.form-control::placeholder {
+    color: #b8c2d1;
+}
+
+.form-control:focus,
+.form-select:focus {
+    background-color: #162337;
+    color: white;
+    border-color: #e50914;
+    box-shadow: none;
+}
+
+.form-select option {
+    background-color: #162337;
+    color: white;
+}
+
+
+/* PAGINATION */
+
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    padding: 20px 0;
+    flex-wrap: wrap;
+}
+
+.page-btn {
+    background-color: #101c2e;
+    color: white;
+    border: 1px solid #e50914;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.page-btn:hover {
+    background-color: #b20710;
+    color: white;
+}
+
+.page-btn.active {
+    background-color: #e50914;
+    color: white;
+    border-color: #e50914;
+}
+
+.page-btn:focus {
+    outline: none;
+    box-shadow: 0 0 5px #e50914;
+}
+
+
+/* ABOUT PAGE */
+
+.about-content {
+    background-color: #162337;
+    padding: 40px;
+    border-radius: 10px;
+    line-height: 1.8;
+}
+
+.about-content h1 {
+    color: #e50914;
+    margin-bottom: 20px;
+}
+
+
+/* ACCOUNT PAGE */
+
+.account-box {
+    background-color: #162337;
+    padding: 35px;
+    border-radius: 12px;
+}
+
+.account-box h2 {
+    color: #e50914;
+    text-align: center;
+}
+
+.account-box h3 {
+    margin-bottom: 20px;
+}
+
+.account-box hr {
+    border-color: #718096;
+    margin: 30px 0;
+}
+
+.account-box label {
+    color: white;
+}
+
+
+/* FOOTER */
+
+.footer {
+    background-color: #101c2e;
+    text-align: center;
+    padding: 25px;
+    margin-top: auto;
+    color: #b8c2d1;
+    width: 100%;
+    flex-shrink: 0;
+}
+
+
+/* TABLETS */
+
+@media (max-width: 991px) {
+
+    .movie-card video {
+        height: 160px;
+    }
+
+}
+
+
+/* MOBILE PHONES */
+
+@media (max-width: 767px) {
+
+    .hero {
+        padding: 80px 15px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .movie-card {
+        margin-bottom: 15px;
+    }
+
+    .movie-card video {
+        height: 180px;
+    }
+
+    .movie-card img {
+        height: 250px;
+    }
+
+    .about-content {
+        padding: 20px;
+    }
+
+    .account-box {
+        padding: 20px;
+    }
+
+    .navbar-nav .nav-link {
+        margin-left: 0;
+    }
+
+}
+
+
+/* SMALL PHONES */
+
+@media (max-width: 450px) {
+
+    .movie-card video {
+        height: 200px;
+    }
+
+    .pagination-container {
+        gap: 8px;
+    }
+
+    .page-btn {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+
+}
